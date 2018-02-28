@@ -1,0 +1,114 @@
+
+[Spring MVC]
+- Framework for building WebApp in Java
+- Base on Model-View-Controller
+- Leverage features of the Core Spring Framework (IoC / DI)
+
+
+[Spring MVC front Controller]
+- DispatcherServlet
+
+[Controller]
+- Handle the request
+- Store / retrieve data (db,web,service)
+- Place data in model
+
+- Send to appropriate view template
+
+
+[View-Template]
+
+- Spring MVC
+- MOST common is JSP+JSTL
+
+
+[Spring MVC Configuration process part 1]
+
+add config file to WEB-INF/web.xml
+
+1.Config Spring MVC Dispatcher Servlet
+2.Set up URL Mapping
+
+[Spring MVC Configuration process part 2]
+
+add config file to WEB-INF/spring-mvc-demo-servlet.xml
+3.Add support for Spring component scan
+
+4.Add support conversion , formatting and validation
+
+5.Config Spring MVC View Resolver
+
+
+
+[Spring MVC Controller Development Process]
+1.Create Controller class
+2.Define Controller Method
+3.Add Request Mapping to Controller method
+4.Return View Name
+5.Develop View Page
+
+
+Controller class use @Controller annotation
+(Inherits from @Component)
+
+
+
+use @RequestMapping for mapping url to Controller Method
+
+
+return to view
+----------------------------------------------------
+
+
+READ FORM DATA --> 
+
+
+
+-- ADDing DATA to spring Model
+
+
+Read HTML Form Data With @RequestParam Annotation
+
+
+Controller @RequestMapping >> Parent URL
+
+
+
+Spring MVC Form Tag
+
+
+Modal is use to pass data between controller and view
+
+
+
+[Development Process - Data Form Binding]
+1.Create Student class
+2.Create Student Controller
+3.Create HTML form
+4.Create form processing code
+5. Create confirm page
+
+
+
+[Validation]
+
+Development Process
+1.Add validation rule to Customer class
+2.Display error message on HTML
+3.Perform validation in the Controller
+4.Update confirm page
+
+!prevent White-Space with @InitBinder
+
+[Create Custom error message]
+
+
+
+
+[Create Custom Validation Rule]
+
+[Development Process]
+1.Create custom validation rule
+2.Add validation rule to Customer class
+3.Display error message on HTML form
+4.Update confirmation page
